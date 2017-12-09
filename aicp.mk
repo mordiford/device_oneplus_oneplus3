@@ -32,6 +32,13 @@ PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 TARGET_VENDOR := oneplus
 
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    TARGET_DEVICE="OnePlus3" \
+    PRODUCT_MODEL="A3000" \
+    PRODUCT_NAME="OnePlus3" \
+    BUILD_FINGERPRINT="OnePlus/OnePlus3/OnePlus3:8.0.0/OPR6.170623.013/10250816:user/release-keys" \
+    PRIVATE_BUILD_DESC="OnePlus3-user 8.0.0 OPR6.170623.013 77 release-keys"
+
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
         DEVICE_MAINTAINERS="lindwurm"
