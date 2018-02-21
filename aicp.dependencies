@@ -5,6 +5,7 @@
   },
   {
     "repository": "mordiford/kazari-op3-kernel",
-    "target_path": "kernel/oneplus/msm8996"
+    "target_path": "kernel/oneplus/msm8996",
+    "branch": "kazari-v6-ex"
   }
 ]
