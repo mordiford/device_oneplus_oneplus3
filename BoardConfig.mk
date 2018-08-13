@@ -198,6 +198,7 @@ BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3154116608
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 57436708864
 BOARD_FLASH_BLOCK_SIZE := 262144
+TARGET_USES_MKE2FS := true
 
 # Power
 TARGET_HAS_NO_WIFI_STATS := true
@@ -224,8 +225,7 @@ BOARD_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy
 
 # Shims
 TARGET_LD_SHIM_LIBS := \
-    /system/vendor/lib/hw/camera.msm8996.so|libcamera_shim.so \
-    /system/lib/libcamera_client.so|libcamera_parameters_shim.so
+    /vendor/lib/hw/camera.msm8996.so|libcamera_shim.so
 
 # Thermal
 USE_DEVICE_SPECIFIC_THERMAL := true
